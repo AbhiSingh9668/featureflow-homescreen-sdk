@@ -12,18 +12,21 @@ Install the SDK directly from GitHub:
 ```bash
 npm install git+https://github.com/AbhiSingh9668/featureflow-homescreen-sdk.git
 
----
+```
 
 ## Basic Usage
-  
+
+```bash
 import { HomeScreen } from 'featureflow-sdk';
 
 export default function App() {
   return <HomeScreen />;
 }
+```
 
 ## With Custom Props
 
+```bash
 import { HomeScreen } from 'featureflow-sdk';
 
 export default function App() {
@@ -35,3 +38,5 @@ export default function App() {
     />
   );
 }
+```
+
