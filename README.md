@@ -11,3 +11,27 @@ Install the SDK directly from GitHub:
 
 ```bash
 npm install git+https://github.com/AbhiSingh9668/featureflow-homescreen-sdk.git
+
+---
+
+## Basic Usage
+  
+import { HomeScreen } from 'featureflow-sdk';
+
+export default function App() {
+  return <HomeScreen />;
+}
+
+## With Custom Props
+
+import { HomeScreen } from 'featureflow-sdk';
+
+export default function App() {
+  return (
+    <HomeScreen
+      title="Welcome from Host App"
+      buttonText="Continue"
+      onPress={() => console.log('Button pressed')}
+    />
+  );
+}
