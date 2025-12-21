@@ -2,9 +2,9 @@
   "name": "featureflow-sdk",
   "version": "1.0.0",
   "main": "index.js",
-  "peerDependencies": {
-    "react": "^18.x",
-    "react-native": "^0.70.x"
-  },
+ "peerDependencies": {
+  "react": ">=18",
+  "react-native": ">=0.70"
+},
   "files": ["src", "index.js"]
 }
