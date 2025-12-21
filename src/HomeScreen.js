@@ -1,17 +1,25 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-export default function HomeScreen() {
+export default function HomeScreen({
+  title = 'Home Screen',
+  buttonText = 'Test SDK',
+  onPress,
+}) {
   const handlePress = () => {
-    console.warn('SDK test')
+    if (onPress) {
+      onPress()
+    } else {
+      console.warn('SDK test')
+    }
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Text style={styles.title}>{title}</Text>
 
       <TouchableOpacity style={styles.button} onPress={handlePress}>
-        <Text style={styles.buttonText}>Test SDK</Text>
+        <Text style={styles.buttonText}>{buttonText}</Text>
       </TouchableOpacity>
     </View>
   )
