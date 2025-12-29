@@ -34,6 +34,7 @@ export default function App() {
     <HomeScreen
       title="Welcome from Host App"
       buttonText="Continue"
+      buttonColor= '#2563eb'
       onPress={() => console.log('Button pressed')}
     />
   );
